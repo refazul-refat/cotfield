@@ -131,7 +131,7 @@ if ($responsive_design):?>
 	<?php endif;?>
 
 	<!-- content -->
-	<div id="content">
+	<div id="content" class="">
 
 		<?php if(	(( get_option(THEMESLUG."_slider_active") && is_front_page()) || is_front_page() ) && (!get_option(THEMESLUG.'_remove_curvs')) ) echo '<div class="slider_cover"></div>';  ?>
 		<div class="content_top <?php if(get_option(THEMESLUG.'_remove_curvs') && !is_front_page()):?>no_curv<?php endif;?> <?php if(get_option(THEMESLUG.'_remove_curvs') && is_front_page()):?>no_curv_home<?php endif;?> "></div>
