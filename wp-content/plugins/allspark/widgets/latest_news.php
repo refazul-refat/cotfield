@@ -25,15 +25,12 @@ class LatestNews extends WP_Widget {
 		$post='<div class="title"><h4>Latest News</h4></div>
 		<div class="recent_posts classic">
 			<ul>
-				<li class="date"><span class="day">07</span>Jan</li>
 				<li><span class="title"><a href="'.$link1.'">'.$text1.'</a></span>'.$desc1.'</li>
 			</ul>
 			<ul>
-				<li class="date"><span class="day">28</span>Dec</li>
 				<li><span class="title"><a href="'.$link2.'">'.$text2.'</a></span>'.$desc2.'</li>
 			</ul>
 			<ul>
-				<li class="date"><span class="day">14</span>Dec</li>
 				<li><span class="title"><a href="'.$link3.'">'.$text3.'</a></span>'.$desc3.'</li>
 			</ul>
 		</div>';
