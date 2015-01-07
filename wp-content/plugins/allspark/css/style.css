@@ -21,3 +21,6 @@ legend{
 	color: #e77927;
 	padding: 0px 4px;
 }
+.widget ul li a{
+	font-weight: bold;
+}
