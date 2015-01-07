@@ -65,10 +65,35 @@ function table($atts,$content=null){
 		$inner.='</tr>';
 	}
 	
-	return '<table style="margin:auto;"><tbody>'.$inner.'<tr><td style="text-align:center;" colspan="'.$a['column'].'">'.$a['title'].'</td></tr></tbody></table>';
+	return '<table style="border:none;"><tbody>'.$inner.'<tr><td style="text-align:center;border:none;" colspan="'.$a['column'].'">'.$a['title'].'</td></tr></tbody></table>';
 }
 
 add_shortcode('table','table');
 
+function head($atts,$content=null){
+	$a=shortcode_atts(array('level'=>'1'),$atts);
+	
+	if($a['level']>6)$a['level']=6;
+	$styles='font-weight:bold;text-align:center;';
+	return '<h'.$a['level'].' style="'.$styles.'">'.$content.'</h'.$a['level'].'>';
+}
+
+add_shortcode('head','head');
+
+function space($atts,$content=null){
+	$a=shortcode_atts(array('size'=>'10'),$atts);
+	
+	return '<div style="clear:both;height:'.$a['size'].'px;"></div>';
+}
+
+add_shortcode('space','space');
+
+function box($atts,$content=null){
+	$a=shortcode_atts(array('title'=>''),$atts);
+	
+	return '<fieldset><legend>'.$a['title'].'</legend><p>'.$content.'</p></fieldset>';
+}
+
+add_shortcode('box','box');
 
 ?>
