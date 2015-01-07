@@ -29,5 +29,4 @@ if ( ! isset( $content_width ) ) $content_width = 620;
 # Load the theme
 require_once (get_template_directory() . '/rt-framework/classes/loading.php');
 $rttheme = new RTTheme();
-$rttheme->start(array('theme' => 'RT-THEME 15','slug' => 'rttheme','version' => '1.0')); 
-?>
+$rttheme->start(array('theme' => 'RT-THEME 15','slug' => 'rttheme','version' => '1.0'));
