@@ -26,7 +26,7 @@ class Latest_Posts_2 extends WP_Widget {
 		$show_thumbnails	=	$instance['show_thumbnails'];
 		$show_excerpt		=	$instance['show_excerpt'];
 		 
-		$postargs			=	array('post_type'=>'post','showposts'=>$count,'cat'=>$categories, 'nopaging' => 0, 'post_status' => 'publish', 'ignore_sticky_posts' => 1);    
+		$postargs			=	array('post_type'=>'post','showposts'=>$count,'cat'=>$categories.',-'.get_cat_ID('services'), 'nopaging' => 0, 'post_status' => 'publish', 'ignore_sticky_posts' => 1);    //Let us ignore services category
 		$post_query 		= 	new WP_Query($postargs); 
 		
 		$rt_posts = '<div class="recent_posts classic">';
@@ -94,6 +94,7 @@ class Latest_Posts_2 extends WP_Widget {
 
 			<?php
 			foreach ($rt_getcat as $op_val=>$option) {
+			if($op_val==get_cat_ID('services'))continue;		//Let us ignore services category
 				if($categories){
 					foreach($categories as $a_key => $a_value){
 						if (	$a_value ==  $op_val ){
