@@ -21,6 +21,12 @@ legend{
 	color: #e77927;
 	padding: 0px 4px;
 }
+.widget .recent_posts .title{
+	padding: 14px 0 5px 0px;
+}
+.widget .recent_posts ul li{
+	margin: 0px;
+}
 .widget ul li a{
 	font-weight: bold;
 }
