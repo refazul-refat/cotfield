@@ -46,7 +46,7 @@ function rt_theme_custom_posts(){
 		'query_var' 			=> false,
 		'can_export' 			=> true,
 		'show_in_nav_menus' 	=> true,		
-		'capability_type' 		=> 'post',
+		'capability_type' 		=> 'page',
 		'menu_position' 		=> null, 
 		'rewrite' 			=> array( 'slug' => $portfolio_slug, 'with_front' => true, 'pages' => true, 'feeds'=>false ),
 		'menu_icon' 			=> THEMEADMINURI .'/images/portfolio-icon.png', // 16px16
@@ -109,7 +109,7 @@ function rt_theme_custom_posts(){
 		'query_var' => false,
 		'can_export' => true,
 		'show_in_nav_menus' => true,		
-		'capability_type' => 'post',
+		'capability_type' => 'page',
 		'menu_position' => null, 
 		'rewrite' => array( 'slug' => $product_slug, 'with_front' => true, 'pages' => true, 'feeds'=>false ),
 		'menu_icon' => THEMEADMINURI .'/images/product-icon.png', // 16px16
@@ -167,7 +167,7 @@ function rt_theme_custom_posts(){
 		'publicly_queryable' => true,
 		'show_ui' => true, 
 		'query_var' => true, 
-		'capability_type' => 'post', 
+		'capability_type' => 'page', 
 		'menu_position' => null,
 		'rewrite' => array('slug'=>'slide','with_front'=>false),
 		'menu_icon' => THEMEADMINURI .'/images/slides.png', // 16px16
@@ -197,7 +197,7 @@ function rt_theme_custom_posts(){
 		'publicly_queryable' => true,
 		'show_ui' => true, 
 		'query_var' => true, 
-		'capability_type' => 'post', 
+		'capability_type' => 'page', 
 		'menu_position' => null,
 		'menu_icon' => THEMEADMINURI .'/images/home_contents.png', // 16px16
 		'supports' => array( 'title','editor','author','thumbnail')
